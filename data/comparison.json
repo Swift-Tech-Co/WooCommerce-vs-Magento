@@ -1,0 +1,145 @@
+{
+  "meta": {
+    "title": "WooCommerce vs Magento: E-Commerce Platform Comparison",
+    "description": "Structured comparison of WooCommerce and Magento (Adobe Commerce) across performance, cost, scalability, developer experience, and ecosystem.",
+    "version": "1.0.0",
+    "updated": "2026-05-26",
+    "source": "https://swifttechco.com/comparisons/woocommerce-vs-magento"
+  },
+  "platforms": {
+    "woocommerce": {
+      "name": "WooCommerce",
+      "vendor": "Automattic",
+      "license": "GPL-3.0",
+      "language": "PHP",
+      "founded": 2011,
+      "latest_version": "8.x",
+      "website": "https://woocommerce.com",
+      "underlying_cms": "WordPress"
+    },
+    "magento": {
+      "name": "Magento (Adobe Commerce)",
+      "vendor": "Adobe",
+      "license": "Open Source Edition: OSL-3.0 / Commerce: proprietary",
+      "language": "PHP",
+      "founded": 2008,
+      "latest_version": "2.4.x",
+      "website": "https://business.adobe.com/products/magento/magento-commerce.html",
+      "underlying_cms": "Custom MVC framework"
+    }
+  },
+  "dimensions": [
+    {
+      "name": "Setup complexity",
+      "woocommerce": { "rating": 2, "notes": "Install WordPress plugin in minutes; guided wizard for products, payments, shipping" },
+      "magento":     { "rating": 5, "notes": "Requires server configuration, Composer install, multi-step CLI setup; typically 1 to 3 days" }
+    },
+    {
+      "name": "Hosting requirements",
+      "woocommerce": { "rating": 2, "notes": "Runs on shared hosting; 2 GB RAM minimum recommended; scales to VPS/cloud" },
+      "magento":     { "rating": 5, "notes": "8 GB RAM minimum recommended; Elasticsearch required; cloud or dedicated server" }
+    },
+    {
+      "name": "Performance (out of box)",
+      "woocommerce": { "rating": 3, "notes": "Adequate for small to mid stores; degrades with many plugins; needs caching plugins" },
+      "magento":     { "rating": 4, "notes": "Built-in full-page cache, Varnish support, Redis; better baseline at scale" }
+    },
+    {
+      "name": "Scalability",
+      "woocommerce": { "rating": 3, "notes": "Works well to ~50k SKUs; high-traffic stores need significant infrastructure investment" },
+      "magento":     { "rating": 5, "notes": "Designed for enterprise scale; multi-store, multi-language, multi-currency out of box" }
+    },
+    {
+      "name": "Total cost of ownership (small store)",
+      "woocommerce": { "rating": 1, "notes": "Low: $10 to $30/mo hosting + free core; most essential extensions are free or low-cost" },
+      "magento":     { "rating": 4, "notes": "High: $500 to $2,000+/mo for Adobe Commerce license + enterprise hosting" }
+    },
+    {
+      "name": "Total cost of ownership (enterprise)",
+      "woocommerce": { "rating": 3, "notes": "Mid: infrastructure costs rise steeply; custom development needed for enterprise features" },
+      "magento":     { "rating": 5, "notes": "Very high: $22k to $125k/yr Adobe Commerce license; significant developer costs" }
+    },
+    {
+      "name": "Plugin/extension ecosystem",
+      "woocommerce": { "rating": 5, "notes": "60,000+ WordPress plugins; 800+ WooCommerce extensions; largest ecosystem" },
+      "magento":     { "rating": 4, "notes": "Adobe Commerce Marketplace with 4,000+ extensions; higher quality bar, higher prices" }
+    },
+    {
+      "name": "Developer experience",
+      "woocommerce": { "rating": 4, "notes": "WordPress hooks/filters familiar to millions of PHP devs; REST API; React admin blocks" },
+      "magento":     { "rating": 3, "notes": "Steep learning curve; module system, DI container, GraphQL API; powerful but complex" }
+    },
+    {
+      "name": "Built-in B2B features",
+      "woocommerce": { "rating": 2, "notes": "Minimal; requires extensions for wholesale, quote requests, company accounts" },
+      "magento":     { "rating": 5, "notes": "Adobe Commerce includes company accounts, shared catalogs, requisition lists, quick order" }
+    },
+    {
+      "name": "Multi-store management",
+      "woocommerce": { "rating": 2, "notes": "WordPress Multisite works but is limited; each site largely independent" },
+      "magento":     { "rating": 5, "notes": "Native multi-store, multi-website, multi-language from single admin; shared catalog" }
+    },
+    {
+      "name": "SEO capabilities",
+      "woocommerce": { "rating": 5, "notes": "Leverages WordPress SEO plugins (Yoast, RankMath); excellent URL control, sitemaps" },
+      "magento":     { "rating": 4, "notes": "Good built-in SEO; canonical URLs, meta control, sitemaps; requires config effort" }
+    },
+    {
+      "name": "Security update cadence",
+      "woocommerce": { "rating": 4, "notes": "Frequent WordPress + WooCommerce patches; large attack surface due to plugin sprawl" },
+      "magento":     { "rating": 4, "notes": "Quarterly Adobe Commerce patches; Security Scan Tool; smaller plugin surface" }
+    }
+  ],
+  "use_case_recommendations": [
+    {
+      "use_case": "Small to mid content-driven store (under 5,000 SKUs)",
+      "recommendation": "woocommerce",
+      "reason": "Lower cost, faster setup, WordPress content integration, sufficient for most small stores"
+    },
+    {
+      "use_case": "Enterprise B2B catalog (10,000+ SKUs, complex pricing)",
+      "recommendation": "magento",
+      "reason": "Native multi-store, shared catalogs, company accounts, and enterprise-grade performance"
+    },
+    {
+      "use_case": "Blog-heavy brand with e-commerce secondary",
+      "recommendation": "woocommerce",
+      "reason": "WordPress is the dominant CMS; WooCommerce slots in natively"
+    },
+    {
+      "use_case": "Multi-country, multi-currency retailer",
+      "recommendation": "magento",
+      "reason": "Native multi-website architecture; built-in currency and language management"
+    },
+    {
+      "use_case": "Budget-conscious startup",
+      "recommendation": "woocommerce",
+      "reason": "Near-zero initial cost; host on shared for under $20/mo; scale when revenue justifies it"
+    },
+    {
+      "use_case": "Custom checkout and complex promotions",
+      "recommendation": "magento",
+      "reason": "Native promotions engine, customer segments, and cart price rules exceed WooCommerce"
+    }
+  ],
+  "cost_comparison": {
+    "woocommerce": {
+      "core": "Free",
+      "hosting_monthly_low": 10,
+      "hosting_monthly_high": 500,
+      "essential_extensions_yearly": "0 to 500",
+      "developer_hourly_rate": "50 to 150",
+      "typical_build_cost_small": "2,000 to 8,000",
+      "typical_build_cost_enterprise": "20,000 to 80,000"
+    },
+    "magento": {
+      "core": "Open Source free; Adobe Commerce $22,000 to $125,000/yr",
+      "hosting_monthly_low": 500,
+      "hosting_monthly_high": 5000,
+      "essential_extensions_yearly": "500 to 5,000",
+      "developer_hourly_rate": "75 to 200",
+      "typical_build_cost_small": "15,000 to 50,000",
+      "typical_build_cost_enterprise": "100,000 to 500,000"
+    }
+  }
+}
